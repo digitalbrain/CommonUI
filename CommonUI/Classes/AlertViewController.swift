@@ -28,7 +28,7 @@ open class AlertViewController: UIViewController {
     public static func show(withTitle title: String?, message: String?, buttonTitles: [String]? = nil, cancelButton: String? = nil, configuration: AlertViewConfiguration = AlertViewConfiguration(), targetViewController: UIViewController? = nil, completion: ((_ sender: UIButton?) -> ())? = nil) {
         let bundle = Bundle(for: self.self)
        
-        if let alert = UIStoryboard(name: "CommonUI", bundle: bundle).instantiateViewController(withIdentifier: "Alert") as? AlertViewController {
+        if let alert = UIStoryboard(name: "CommonUI.bundle/CommonUI", bundle: bundle).instantiateViewController(withIdentifier: "Alert") as? AlertViewController {
             alert.dismissCompletion = completion
             alert.modalPresentationStyle = .overCurrentContext
             alert.modalTransitionStyle = .crossDissolve

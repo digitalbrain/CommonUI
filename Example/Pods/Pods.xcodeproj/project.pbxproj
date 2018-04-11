@@ -20,7 +20,6 @@
 		8AA3D60DE2B2633772AA3AAB13F7B3A5 /* Pods-CommonUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E26F8CE99FDCC55FF1769F993E688F /* Pods-CommonUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4ABBABCA79B7D4A5124BA3101F99A67 /* CommonUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A1F31682C1C6100DF339F6096D274B /* CommonUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4755549C9E38E3C6A01677D7026153A /* Pods-CommonUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8CABBB415260895F4D87AD711506FA /* Pods-CommonUI_Example-dummy.m */; };
-		B4BC33E2207E1898000A79D8 /* CommonUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389872E51CC2D2A0CC6769294713FD31 /* CommonUI.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -398,7 +397,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E38D8B2715B9361820343968FD34440 /* CommonUI.bundle in Resources */,
-				B4BC33E2207E1898000A79D8 /* CommonUI.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
