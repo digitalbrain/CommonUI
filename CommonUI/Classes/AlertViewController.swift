@@ -85,10 +85,44 @@ open class AlertViewController: UIViewController {
         self.dismissCompletion?(sender)
     }
     
+    
+    open override func viewWillAppear(_ animated: Bool) {
+        
+        self.dialogView?.transform = self.initialTransformFor(animation: self.configuration.animation)
+        super.viewWillAppear(animated)
+        
+        let coordinator = self.transitionCoordinator
+        coordinator?.animate(alongsideTransition: { (coordinator) in
+            self.dialogView?.transform = .identity
+        }, completion: nil)
+    }
+    
+    
+    open override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        let coordinator = self.transitionCoordinator
+        coordinator?.animate(alongsideTransition: { (coordinator) in
+            self.dialogView?.transform = self.initialTransformFor(animation: self.configuration.animation)
+        }, completion: nil)
+    }
+    
+    
+    func initialTransformFor(animation: AlertViewControllerAnimation) -> CGAffineTransform {
+        switch animation {
+        case .none:
+            return .identity
+        case .bottom:
+            return CGAffineTransform(translationX: 0, y: self.view.frame.size.height)
+        case .top:
+            return CGAffineTransform(translationX: 0, y: -self.view.frame.size.height)
+        }
+    }
 }
 
 
 public struct AlertViewConfiguration {
+    
+    public var animation: AlertViewControllerAnimation = .bottom
     
     public var titleColor: UIColor = UIColor.black
     public var titleFont: UIFont = UIFont.boldSystemFont(ofSize: 18)
@@ -106,9 +140,14 @@ public struct AlertViewConfiguration {
     public var dialogBackgroudColor: UIColor = UIColor.white
     public var dialogCornerRadius: CGFloat = 5
     
-    public init() {
-    }
-    
+    public init() {}
+}
+
+
+public enum AlertViewControllerAnimation {
+    case none
+    case bottom
+    case top
 }
 
 

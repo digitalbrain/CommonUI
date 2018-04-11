@@ -19,22 +19,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lEy-kj-PX0">
-                                <rect key="frame" x="67.5" y="283.5" width="240" height="120"/>
+                                <rect key="frame" x="37.5" y="283.5" width="300" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAP-Lf-sRd">
-                                        <rect key="frame" x="10" y="10" width="220" height="21.5"/>
+                                        <rect key="frame" x="10" y="10" width="280" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nN-NN-JTj">
-                                        <rect key="frame" x="10" y="43.5" width="220" height="20.5"/>
+                                        <rect key="frame" x="10" y="43.5" width="280" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Tjo-S7-eGS">
-                                        <rect key="frame" x="0.0" y="76" width="240" height="44"/>
+                                        <rect key="frame" x="0.0" y="76" width="300" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="qUp-H8-KBn"/>
                                         </constraints>
@@ -42,7 +42,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="6wy-0v-s2Z"/>
+                                    <constraint firstAttribute="width" constant="300" id="6wy-0v-s2Z"/>
                                     <constraint firstItem="oAP-Lf-sRd" firstAttribute="leading" secondItem="lEy-kj-PX0" secondAttribute="leading" constant="10" id="I1A-3g-Mrn"/>
                                     <constraint firstItem="0nN-NN-JTj" firstAttribute="top" secondItem="oAP-Lf-sRd" secondAttribute="bottom" constant="12" id="JNc-vb-nbm"/>
                                     <constraint firstItem="oAP-Lf-sRd" firstAttribute="centerX" secondItem="lEy-kj-PX0" secondAttribute="centerX" id="NNe-qu-DfW"/>
