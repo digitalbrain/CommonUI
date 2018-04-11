@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CommonUI_Example' do
+  pod 'CommonUI', :path => '../'
+
+  target 'CommonUI_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
