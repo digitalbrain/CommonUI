@@ -1,15 +1,23 @@
 # CommonUI
 
-[![CI Status](http://img.shields.io/travis/digitalbrain@hotmail.it/CommonUI.svg?style=flat)](https://travis-ci.org/digitalbrain@hotmail.it/CommonUI)
-[![Version](https://img.shields.io/cocoapods/v/CommonUI.svg?style=flat)](http://cocoapods.org/pods/CommonUI)
-[![License](https://img.shields.io/cocoapods/l/CommonUI.svg?style=flat)](http://cocoapods.org/pods/CommonUI)
-[![Platform](https://img.shields.io/cocoapods/p/CommonUI.svg?style=flat)](http://cocoapods.org/pods/CommonUI)
+
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## UI Elements
+###AlertViewController
+Simple and customizable AlertView that can be used with a single line of code
+
+Example:
+
+```
+AlertViewController.show(withTitle: "Example", message: "This is a test message", buttonTitles: ["Option one", "Option two"], cancelButton: nil) { (sender) in
+            
+  }
+        
+```
 
 ## Installation
 
@@ -17,7 +25,7 @@ CommonUI is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'CommonUI'
+pod 'CommonUI', :git => 'https://github.com/digitalbrain/CommonUI', :tag => '0.1.0'
 ```
 
 ## Author
