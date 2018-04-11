@@ -30,7 +30,7 @@ pod 'CommonUI', :git => 'https://github.com/digitalbrain/CommonUI', :tag => '0.1
 
 ## Author
 
-digitalbrain@hotmail.it, digitalbrain@hotmail.it
+digitalbrain
 
 ## License
 
