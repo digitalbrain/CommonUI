@@ -1,9 +1,9 @@
 {
   "name": "CommonUI",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "A short description of CommonUI.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/digitalbrain@hotmail.it/CommonUI",
+  "description": "<<-DESC This library will contains common UI widget",
+  "homepage": "https://github.com/digitalbrain/CommonUI",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "digitalbrain@hotmail.it": "digitalbrain@hotmail.it"
   },
   "source": {
-    "git": "https://github.com/digitalbrain@hotmail.it/CommonUI.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/digitalbrain/CommonUI.git",
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "9.0"
