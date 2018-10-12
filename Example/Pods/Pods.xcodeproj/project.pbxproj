@@ -16,6 +16,7 @@
 		747AD38BA4DC732EB64669002A7E207F /* CommonUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463A2D70DB234A0238EC87BE616EBAE8 /* CommonUI.storyboard */; };
 		89A6A7290F204F73072E7C738B3D09A8 /* CommonUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DE853F1A7238EEDBB742B81F25DC444 /* CommonUI.bundle */; };
 		8AA3D60DE2B2633772AA3AAB13F7B3A5 /* Pods-CommonUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E26F8CE99FDCC55FF1769F993E688F /* Pods-CommonUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B441C7ED21709ABE0087D47D /* ViewWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441C7EC21709ABE0087D47D /* ViewWithShadow.swift */; };
 		B4755549C9E38E3C6A01677D7026153A /* Pods-CommonUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8CABBB415260895F4D87AD711506FA /* Pods-CommonUI_Example-dummy.m */; };
 		BD4C511C6DD9CBED8EE8442D942F22C8 /* CommonUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D3B315FA9278BB88915A454D760CB /* CommonUI-dummy.m */; };
 		D5A9E0B7DAF7F19AB5A5D97D65C7FD91 /* Pods-CommonUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2560B6A76EAD832A27885B5253740537 /* Pods-CommonUI_Tests-dummy.m */; };
@@ -79,6 +80,7 @@
 		A07721DC33E49D4D8C29D670310BFCB9 /* Pods_CommonUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C04A2944B12A2A33FAFFBF1B5D399C /* CommonUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CommonUI.modulemap; sourceTree = "<group>"; };
 		A6436DB2D4430B53C582CF2891C22A17 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B441C7EC21709ABE0087D47D /* ViewWithShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewWithShadow.swift; path = CommonUI/Classes/ViewWithShadow.swift; sourceTree = "<group>"; };
 		B613D36C0DFB3B71831BE3249F8AAA7D /* Pods-CommonUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CommonUI_Tests.modulemap"; sourceTree = "<group>"; };
 		CA0F4062E2BF15B805A62326F9B00453 /* Pods-CommonUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CommonUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D599F378A3860BCFA5DEEB905A9D80AC /* Pods_CommonUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +128,7 @@
 		2AAB73BA5F11D79CA28F51C0C0E220AD /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				B441C7EC21709ABE0087D47D /* ViewWithShadow.swift */,
 				455F197A0F9562A45759222211C657E4 /* AlertViewController.swift */,
 				67783E5FE9DB1113C3913E0BB9A9C5FF /* Extensions.swift */,
 				F1C189F92A549296123AABA2213C9DCC /* Pod */,
@@ -436,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B441C7ED21709ABE0087D47D /* ViewWithShadow.swift in Sources */,
 				0054BDBE303E823DB32D98E3DB247005 /* AlertViewController.swift in Sources */,
 				BD4C511C6DD9CBED8EE8442D942F22C8 /* CommonUI-dummy.m in Sources */,
 				5F11102F0E18E0E39EB7E539D12FDC37 /* Extensions.swift in Sources */,
