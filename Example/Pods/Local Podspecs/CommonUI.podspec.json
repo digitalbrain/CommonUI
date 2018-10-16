@@ -1,19 +1,15 @@
 {
   "name": "CommonUI",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "A short description of CommonUI.",
-  "description": "<<-DESC This library will contains common UI widget",
+  "swift_version": "4.2",
   "homepage": "https://github.com/digitalbrain/CommonUI",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
   "authors": {
-    "digitalbrain@hotmail.it": "digitalbrain@hotmail.it"
+    "Massimiliano Schinco": "digitalbrain@hotmail.it"
   },
   "source": {
     "git": "https://github.com/digitalbrain/CommonUI.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "9.0"

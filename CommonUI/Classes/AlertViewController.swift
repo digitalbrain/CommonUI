@@ -1,8 +1,5 @@
 //
-//  AlertViewController.swift
-//  NuminaSDK_Test
-//
-//  Created by Massimiliano on 10/04/18.
+//  Created by DigitalBrain on 10/04/18.
 //  Copyright © 2018 Massimiliano Schinco. All rights reserved.
 //
 

@@ -1,9 +1,6 @@
 //
-//  UIViewExtension.swift
-//  Euronics
-//
-//  Created by Massimiliano Schinco on 20/02/15.
-//  Copyright (c) 2015 Massimiliano Schinco. All rights reserved.
+//  Created by DigitalBrain on 10/04/18.
+//  Copyright © 2018 Massimiliano Schinco. All rights reserved.
 //
 
 import UIKit

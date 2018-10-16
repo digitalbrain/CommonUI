@@ -1,8 +1,6 @@
 //
-//  ViewWithShadow.swift
-//  CommonUI
-//
-//  Created by Massimiliano on 12/10/2018.
+//  Created by DigitalBrain on 10/04/18.
+//  Copyright © 2018 Massimiliano Schinco. All rights reserved.
 //
 
 import UIKit
