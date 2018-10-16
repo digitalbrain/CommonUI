@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShineLabel: UILabel {
+open class ShineLabel: UILabel {
     var attributedString: NSMutableAttributedString?
     var characterAnimationDurations = [Double]()
     var characterAnimationDelays = [Double]()
@@ -27,18 +27,18 @@ class ShineLabel: UILabel {
         return false == isFadedOut
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
         setText(text)
     }
     
-    func commonInit() {
+    internal func commonInit() {
         singleLetterDuration = 0.02
         fadeoutDuration = 0.5
         isAutoStart = false
@@ -51,23 +51,23 @@ class ShineLabel: UILabel {
         displaylink?.add(to: RunLoop.current, forMode: RunLoop.Mode.common)
     }
     
-    override func didMoveToWindow() {
+    override open func didMoveToWindow() {
         if nil != window && isAutoStart {
             shine()
         }
     }
     
-    func startAnimation(withDuration duration: CFTimeInterval) {
+    open func startAnimation(withDuration duration: CFTimeInterval) {
         self.beginTime = CACurrentMediaTime()
         self.endTime = TimeInterval(beginTime + singleLetterDuration * Double(attributedText?.length ?? 0))
         self.displaylink?.isPaused = false
     }
  
-    func setText(_ text: String?) {
+    open func setText(_ text: String?) {
         self.setAttributedText(NSAttributedString(string: text ?? ""))
     }
     
-    func setAttributedText(_ attributedText: NSAttributedString?) {
+    open func setAttributedText(_ attributedText: NSAttributedString?) {
       
         attributedString = initialAttributedString(from: attributedText)
         super.attributedText = attributedString
@@ -79,21 +79,21 @@ class ShineLabel: UILabel {
         }
     }
     
-    func shine() {
+    open func shine() {
         shine(withCompletion: nil)
     }
     
-    func shine(withCompletion completion: (() -> ())?) {
+    open func shine(withCompletion completion: (() -> ())?) {
         self.completion = completion
         isFadedOut = false
         self.startAnimation(withDuration: singleLetterDuration * Double(attributedText?.length ?? 0))
     }
     
-    func fadeOut() {
+    open func fadeOut() {
         fadeOut(withCompletion: nil)
     }
     
-    func fadeOut(withCompletion completion:(()->())?) {
+    open func fadeOut(withCompletion completion:(()->())?) {
         if !isShining && !isFadedOut {
             self.completion = completion
             // self.fadedOut = YES;
@@ -140,7 +140,7 @@ class ShineLabel: UILabel {
         }
     }
     
-    func initialAttributedString(from attributedString: NSAttributedString?) -> NSMutableAttributedString? {
+    open func initialAttributedString(from attributedString: NSAttributedString?) -> NSMutableAttributedString? {
         let mutableAttributedString = NSMutableAttributedString(attributedString: attributedString ?? NSAttributedString())
         let color: UIColor? = textColor.withAlphaComponent(0)
         if let aColor = color {
