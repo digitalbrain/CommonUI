@@ -19,5 +19,11 @@ class ViewController: UIViewController {
             
         }
     }
+    
+    @IBAction func goGoogle() {
+        let url = URL(string:"https://www.google.com")
+        let webVc = WebViewController.create(url: url!)
+        webVc.show(fromVC: self)
+    }
 }
 

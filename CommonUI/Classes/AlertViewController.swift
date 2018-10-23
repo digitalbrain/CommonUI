@@ -77,17 +77,14 @@ open class AlertViewController: UIViewController {
     
     
     @objc open func dismissDialog(sender: UIButton) {
-        
         self.dismiss(animated: true, completion: nil)
         self.dismissCompletion?(sender)
     }
     
     
     open override func viewWillAppear(_ animated: Bool) {
-        
         self.dialogView?.transform = self.initialTransformFor(animation: self.configuration.animation)
         super.viewWillAppear(animated)
-        
         let coordinator = self.transitionCoordinator
         coordinator?.animate(alongsideTransition: { (coordinator) in
             self.dialogView?.transform = .identity

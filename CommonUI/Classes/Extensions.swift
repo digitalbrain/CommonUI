@@ -5,16 +5,12 @@
 
 import UIKit
 extension UIView {
-    
-
-    
     @IBInspectable var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
         set {
             layer.borderWidth = newValue
-           
         }
     }
     
@@ -24,7 +20,6 @@ extension UIView {
         }
         set {
             layer.borderColor = newValue.cgColor
-            
         }
     }
     
@@ -33,20 +28,16 @@ extension UIView {
             return layer.cornerRadius
         }
         set {
-            
             layer.masksToBounds = (newValue > 0)
             layer.cornerRadius = newValue
-            
         }
     }
     
     @IBInspectable var rotatioAngle : CGFloat {
-    
         get {
             return 0
         }
         set {
-        
             transform = CGAffineTransform(rotationAngle: newValue / 180 * CGFloat(Double.pi) )
         }
     }
@@ -65,9 +56,18 @@ extension UIView {
                 self.performShake(direction: direction * -1, shakes: nshakes)
         
         })
-        
     }
     
+    func add(subview view: UIView , margin: UIEdgeInsets)  {
+        view.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(view)
+        self.addConstraint(NSLayoutConstraint(item: view, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1.0, constant: margin.top))
+        self.addConstraint(NSLayoutConstraint(item: view, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1.0, constant: margin.right))
+        self.addConstraint(NSLayoutConstraint(item: view, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: -margin.bottom))
+        self.addConstraint(NSLayoutConstraint(item: view, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1.0, constant: -margin.left))
+        self.layoutIfNeeded()
+    }
+
 }
 
 
