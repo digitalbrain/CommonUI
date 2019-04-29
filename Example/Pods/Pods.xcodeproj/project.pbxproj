@@ -20,6 +20,7 @@
 		82E2C28F4371C1536BB69EA83FEBC1B1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B5A29A03A2FA4CF87382AAAA20E5BF /* WebViewController.swift */; };
 		886AD9856F9EECE4DBC53E1B86B302DF /* exit_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C02F3078FC22077EC234267046E85FFB /* exit_btn@3x.png */; };
 		8AA3D60DE2B2633772AA3AAB13F7B3A5 /* Pods-CommonUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E26F8CE99FDCC55FF1769F993E688F /* Pods-CommonUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B455C7F122772D1E00BA4899 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455C7F022772D1E00BA4899 /* GradientView.swift */; };
 		B4755549C9E38E3C6A01677D7026153A /* Pods-CommonUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8CABBB415260895F4D87AD711506FA /* Pods-CommonUI_Example-dummy.m */; };
 		B8EADABFB3D5A1B840F67C23C8AD3CD4 /* CommonUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1135F475770BF040F526A26186D0C9 /* CommonUI.storyboard */; };
 		D5788B6474105BAEEFB3AF9731442A2B /* CommonUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98669C291E67146A8C918B2F75D743C0 /* CommonUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -85,6 +86,7 @@
 		980D74B55FA0787B779DE0325951402D /* Pods-CommonUI_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CommonUI_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		98669C291E67146A8C918B2F75D743C0 /* CommonUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CommonUI-umbrella.h"; sourceTree = "<group>"; };
 		A07721DC33E49D4D8C29D670310BFCB9 /* Pods_CommonUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B455C7F022772D1E00BA4899 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = CommonUI/Classes/GradientView.swift; sourceTree = "<group>"; };
 		B613D36C0DFB3B71831BE3249F8AAA7D /* Pods-CommonUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CommonUI_Tests.modulemap"; sourceTree = "<group>"; };
 		C02F3078FC22077EC234267046E85FFB /* exit_btn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "exit_btn@3x.png"; path = "CommonUI/Assets/exit_btn@3x.png"; sourceTree = "<group>"; };
 		C2B5A29A03A2FA4CF87382AAAA20E5BF /* WebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = CommonUI/Classes/WebViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 		54922105EF6A90D72E24E225E1FD9EC7 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				B455C7F022772D1E00BA4899 /* GradientView.swift */,
 				2801101A0CB126E84FD22C015346D650 /* AlertViewController.swift */,
 				F0200B816743CAB81D4002D639734DCA /* Extensions.swift */,
 				81E07E53E38479755DD324F9AA128ABB /* GalleryViewController.swift */,
@@ -472,6 +475,7 @@
 				DB3BA1A8BE9D8D321F76BC417A636E50 /* ShineLabel.swift in Sources */,
 				D9732D9039E5DEC448D1BE543E2E9410 /* ViewWithShadow.swift in Sources */,
 				82E2C28F4371C1536BB69EA83FEBC1B1 /* WebViewController.swift in Sources */,
+				B455C7F122772D1E00BA4899 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
