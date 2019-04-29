@@ -5,7 +5,7 @@
 
 import UIKit
 public extension UIView {
-    @IBInspectable public var borderWidth: CGFloat {
+    @IBInspectable var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -14,7 +14,7 @@ public extension UIView {
         }
     }
     
-    @IBInspectable public var borderColor: UIColor {
+    @IBInspectable var borderColor: UIColor {
         get {
             return UIColor(cgColor: self.layer.borderColor!)
         }
@@ -23,7 +23,7 @@ public extension UIView {
         }
     }
     
-    @IBInspectable public var cornerRadius: CGFloat {
+    @IBInspectable var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -33,7 +33,7 @@ public extension UIView {
         }
     }
     
-    @IBInspectable public var rotatioAngle : CGFloat {
+    @IBInspectable var rotatioAngle : CGFloat {
         get {
             return 0
         }
@@ -42,7 +42,7 @@ public extension UIView {
         }
     }
     
-    public func performShake(direction : Int, shakes : Int) {
+    func performShake(direction : Int, shakes : Int) {
 
         UIView.animate(withDuration: 0.05, animations: { () -> Void in
             self.transform = CGAffineTransform(translationX: 7.0 * CGFloat(direction), y: 0)
@@ -58,7 +58,7 @@ public extension UIView {
         })
     }
     
-    public func add(subview view: UIView , margin: UIEdgeInsets)  {
+    func add(subview view: UIView , margin: UIEdgeInsets)  {
         view.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(view)
         self.addConstraint(NSLayoutConstraint(item: view, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1.0, constant: margin.top))
@@ -74,24 +74,24 @@ public extension UIView {
 public extension UIColor {
     
 
-    public func darker() -> UIColor {
+    func darker() -> UIColor {
         return self.darker(amount: 0.25)
     }
     
-    public func lighter() -> UIColor {
+    func lighter() -> UIColor {
         return self.lighter(amount: 0.25)
     }
     
     
-    public func lighter(amount : CGFloat = 0.25) -> UIColor {
+    func lighter(amount : CGFloat = 0.25) -> UIColor {
         return hueColorWithBrightnessAmount(amount: 1 + amount)
     }
     
-    public func darker(amount : CGFloat = 0.25) -> UIColor {
+    func darker(amount : CGFloat = 0.25) -> UIColor {
         return hueColorWithBrightnessAmount(amount:1 - amount)
     }
     
-    public func hueColorWithBrightnessAmount(amount: CGFloat) -> UIColor {
+    func hueColorWithBrightnessAmount(amount: CGFloat) -> UIColor {
         var hue         : CGFloat = 0
         var saturation  : CGFloat = 0
         var brightness  : CGFloat = 0

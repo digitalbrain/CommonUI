@@ -25,5 +25,19 @@ class ViewController: UIViewController {
         let webVc = WebViewController.create(url: url!)
         webVc.show(fromVC: self)
     }
+    
+    
+    @IBAction func showGallery() {
+        
+        let gallery = GalleryViewController()
+        gallery.numberOfItem = 10
+        gallery.configureItem = { (cell: GalleryCell, index: IndexPath) in
+            let image = UIImage(named:"\(index.item).png")
+            cell.imageView.image = image
+    
+        }
+        self.present(gallery, animated: true, completion: nil)
+        
+    }
 }
 

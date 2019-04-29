@@ -60,13 +60,22 @@
                                     <action selector="showAlert" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PWe-D4-ZWP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfi-2K-vnh">
+                                <rect key="frame" x="138.5" y="454" width="98" height="30"/>
+                                <state key="normal" title="SHOW Gallery"/>
+                                <connections>
+                                    <action selector="showGallery" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BqN-4y-kbH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="X6d-TC-yj7" firstAttribute="centerX" secondItem="sp6-r6-gB1" secondAttribute="centerX" id="7pn-im-3JT"/>
                             <constraint firstItem="sp6-r6-gB1" firstAttribute="top" secondItem="X6d-TC-yj7" secondAttribute="bottom" constant="8" id="B7S-vj-Iqb"/>
+                            <constraint firstItem="yfi-2K-vnh" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="GOe-Is-FUo"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="sp6-r6-gB1" secondAttribute="bottom" constant="85" id="Zce-fQ-oCM"/>
                             <constraint firstItem="sp6-r6-gB1" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="cdB-FW-gb3"/>
+                            <constraint firstItem="X6d-TC-yj7" firstAttribute="top" secondItem="yfi-2K-vnh" secondAttribute="bottom" constant="30" id="miM-lQ-pbL"/>
                         </constraints>
                     </view>
                 </viewController>

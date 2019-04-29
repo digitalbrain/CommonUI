@@ -1,5 +1,5 @@
 PODS:
-  - CommonUI (0.1.4)
+  - CommonUI (0.1.5)
 
 DEPENDENCIES:
   - CommonUI (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CommonUI: d66c056927e5a8491e32088938d561fb5829e834
+  CommonUI: 2ed54450c1831109ce420ec6bc159e10c75b2e05
 
 PODFILE CHECKSUM: c037e85038e9f1646b397c11376eb98c03915b30
 
