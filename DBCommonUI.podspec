@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'DBCommonUI'
   s.version          = '0.1.9'
   s.summary          = 'A short description of CommonUI.'
-  s.swift_version    = '4.2'
+  s.swift_version    = '5'
 
   s.homepage         = 'https://github.com/digitalbrain/CommonUI'
   s.author           = { 'Massimiliano Schinco' => 'digitalbrain@hotmail.it' }
