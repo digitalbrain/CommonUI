@@ -10,11 +10,11 @@ import UIKit
 open class ViewWithShadow: UIView {
     
     
-    @IBInspectable var shadowColor: UIColor = UIColor.black
-    @IBInspectable var shadowRadius: CGFloat = 1.0
-    @IBInspectable var shadowOpacity: CGFloat = 1.0
-    @IBInspectable var shadowXOffset: CGFloat = 1.0
-    @IBInspectable var shadowYOffset: CGFloat = 1.0
+    @IBInspectable public var shadowColor: UIColor = UIColor.black
+    @IBInspectable public var shadowRadius: CGFloat = 1.0
+    @IBInspectable public var shadowOpacity: CGFloat = 1.0
+    @IBInspectable public var shadowXOffset: CGFloat = 1.0
+    @IBInspectable public var shadowYOffset: CGFloat = 1.0
     
     private var shadowLayer: CAShapeLayer!
     
