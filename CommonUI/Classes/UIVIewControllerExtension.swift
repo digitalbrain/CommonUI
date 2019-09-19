@@ -117,7 +117,7 @@ public struct NavigationControllerStyle {
     public var titleColor: UIColor?
     public var titleFont: UIFont?
     
-    init(backgroudColor: UIColor?, titleColor: UIColor?, titleFont: UIFont?) {
+    public init(backgroudColor: UIColor?, titleColor: UIColor?, titleFont: UIFont?) {
         self.backgroudColor = backgroudColor
         self.titleFont = titleFont
         self.titleColor = titleColor
