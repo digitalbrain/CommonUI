@@ -22,6 +22,12 @@
 		8AA3D60DE2B2633772AA3AAB13F7B3A5 /* Pods-CommonUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E26F8CE99FDCC55FF1769F993E688F /* Pods-CommonUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B455C7F122772D1E00BA4899 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455C7F022772D1E00BA4899 /* GradientView.swift */; };
 		B4755549C9E38E3C6A01677D7026153A /* Pods-CommonUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8CABBB415260895F4D87AD711506FA /* Pods-CommonUI_Example-dummy.m */; };
+		B4829D492333B59A001148CB /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4829D432333B59A001148CB /* UIDeviceExtension.swift */; };
+		B4829D4A2333B59A001148CB /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4829D442333B59A001148CB /* UITableViewExtension.swift */; };
+		B4829D4B2333B59A001148CB /* UIVIewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4829D452333B59A001148CB /* UIVIewControllerExtension.swift */; };
+		B4829D4C2333B59A001148CB /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4829D462333B59A001148CB /* UIViewExtension.swift */; };
+		B4829D4D2333B59A001148CB /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4829D472333B59A001148CB /* UIStoryboardExtension.swift */; };
+		B4829D4E2333B59A001148CB /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4829D482333B59A001148CB /* UITableViewCellExtension.swift */; };
 		B8EADABFB3D5A1B840F67C23C8AD3CD4 /* CommonUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1135F475770BF040F526A26186D0C9 /* CommonUI.storyboard */; };
 		D5788B6474105BAEEFB3AF9731442A2B /* CommonUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98669C291E67146A8C918B2F75D743C0 /* CommonUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5A9E0B7DAF7F19AB5A5D97D65C7FD91 /* Pods-CommonUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2560B6A76EAD832A27885B5253740537 /* Pods-CommonUI_Tests-dummy.m */; };
@@ -87,6 +93,12 @@
 		98669C291E67146A8C918B2F75D743C0 /* CommonUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CommonUI-umbrella.h"; sourceTree = "<group>"; };
 		A07721DC33E49D4D8C29D670310BFCB9 /* Pods_CommonUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B455C7F022772D1E00BA4899 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = CommonUI/Classes/GradientView.swift; sourceTree = "<group>"; };
+		B4829D432333B59A001148CB /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIDeviceExtension.swift; path = CommonUI/Classes/UIDeviceExtension.swift; sourceTree = "<group>"; };
+		B4829D442333B59A001148CB /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableViewExtension.swift; path = CommonUI/Classes/UITableViewExtension.swift; sourceTree = "<group>"; };
+		B4829D452333B59A001148CB /* UIVIewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIVIewControllerExtension.swift; path = CommonUI/Classes/UIVIewControllerExtension.swift; sourceTree = "<group>"; };
+		B4829D462333B59A001148CB /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = CommonUI/Classes/UIViewExtension.swift; sourceTree = "<group>"; };
+		B4829D472333B59A001148CB /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardExtension.swift; path = CommonUI/Classes/UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		B4829D482333B59A001148CB /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableViewCellExtension.swift; path = CommonUI/Classes/UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		B613D36C0DFB3B71831BE3249F8AAA7D /* Pods-CommonUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CommonUI_Tests.modulemap"; sourceTree = "<group>"; };
 		C02F3078FC22077EC234267046E85FFB /* exit_btn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "exit_btn@3x.png"; path = "CommonUI/Assets/exit_btn@3x.png"; sourceTree = "<group>"; };
 		C2B5A29A03A2FA4CF87382AAAA20E5BF /* WebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = CommonUI/Classes/WebViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +174,12 @@
 		54922105EF6A90D72E24E225E1FD9EC7 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				B4829D432333B59A001148CB /* UIDeviceExtension.swift */,
+				B4829D472333B59A001148CB /* UIStoryboardExtension.swift */,
+				B4829D482333B59A001148CB /* UITableViewCellExtension.swift */,
+				B4829D442333B59A001148CB /* UITableViewExtension.swift */,
+				B4829D452333B59A001148CB /* UIVIewControllerExtension.swift */,
+				B4829D462333B59A001148CB /* UIViewExtension.swift */,
 				B455C7F022772D1E00BA4899 /* GradientView.swift */,
 				2801101A0CB126E84FD22C015346D650 /* AlertViewController.swift */,
 				F0200B816743CAB81D4002D639734DCA /* Extensions.swift */,
@@ -471,9 +489,15 @@
 				2625C937054DB2F0F7FA347773312C25 /* CommonUI-dummy.m in Sources */,
 				35D3E0F5E73696E77B8F7BB311A7249D /* Extensions.swift in Sources */,
 				5462122607F6A70FCCCFCFE1A6068270 /* GalleryViewController.swift in Sources */,
+				B4829D4B2333B59A001148CB /* UIVIewControllerExtension.swift in Sources */,
 				77FE7758193D9228C792EE1346301F78 /* LinearLoader.swift in Sources */,
+				B4829D4D2333B59A001148CB /* UIStoryboardExtension.swift in Sources */,
+				B4829D4A2333B59A001148CB /* UITableViewExtension.swift in Sources */,
+				B4829D492333B59A001148CB /* UIDeviceExtension.swift in Sources */,
 				DB3BA1A8BE9D8D321F76BC417A636E50 /* ShineLabel.swift in Sources */,
+				B4829D4C2333B59A001148CB /* UIViewExtension.swift in Sources */,
 				D9732D9039E5DEC448D1BE543E2E9410 /* ViewWithShadow.swift in Sources */,
+				B4829D4E2333B59A001148CB /* UITableViewCellExtension.swift in Sources */,
 				82E2C28F4371C1536BB69EA83FEBC1B1 /* WebViewController.swift in Sources */,
 				B455C7F122772D1E00BA4899 /* GradientView.swift in Sources */,
 			);

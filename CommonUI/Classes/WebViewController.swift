@@ -78,7 +78,7 @@ open class WebViewController: UIViewController, WKUIDelegate, WKNavigationDelega
         self.loaderView?.stopAnimating()
     }
     
-    @IBAction func closeAction() {
+    @IBAction override public func closeAction() {
         self.dismiss(animated: true, completion: nil)
     }
     
