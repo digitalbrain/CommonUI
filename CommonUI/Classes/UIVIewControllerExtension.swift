@@ -74,7 +74,7 @@ public extension UIViewController {
 
 
 
-extension UINavigationController {
+public extension UINavigationController {
     
     static func create(transparent: Bool = true, rootVc: UIViewController? = nil, style: NavigationControllerStyle ) -> UINavigationController {
         let navigationController = rootVc != nil ? UINavigationController(rootViewController: rootVc!) : UINavigationController()
