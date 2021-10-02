@@ -5,10 +5,10 @@
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
-    
+
 Pod::Spec.new do |s|
   s.name             = 'DBCommonUI'
-  s.version          = '0.1.9.4'
+  s.version          = '0.1.9.5'
   s.summary          = 'A short description of CommonUI.'
   s.swift_version    = '5.0'
 
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
   s.source_files = 'CommonUI/Classes/**/*'
-  
+
   s.resource_bundles = {
       'CommonUI' => ['CommonUI/Assets/*.{png,storyboard}']
    }

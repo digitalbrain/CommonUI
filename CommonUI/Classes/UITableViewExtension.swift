@@ -13,7 +13,7 @@ public extension UITableView {
      Assume that the class type and the identifier are the same
      */
     func dequeue<T: UITableViewCell>(classType: T.Type, identifier: String? = nil) -> T? {
-        return self.dequeueReusableCell(withIdentifier: identifier ?? T.defaultIdentifier ) as? T
+        return self.dequeueReusableCell(withIdentifier: identifier ?? classType.defaultIdentifier ) as? T
     }
     
     func createOrDequeue<T: UITableViewCell>(classType: T.Type, identifier: String? = nil) -> T {
