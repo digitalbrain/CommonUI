@@ -7,7 +7,7 @@
 //
 
 import UIKit
-@IBDesignable
+
 public class GradientView: UIView {
     
     private let gradientLayer = CAGradientLayer()
@@ -52,7 +52,17 @@ public class GradientView: UIView {
         gradientLayer.endPoint = CGPoint(x: CGFloat(c),y: CGFloat(d))
         gradientLayer.startPoint = CGPoint(x: CGFloat(a),y:CGFloat(b))
   
-        gradientLayer.colors = [color1.cgColor, color2.cgColor]
+        
+        if color1.rgba.alpha == 0 {
+            gradientLayer.colors = [color2.withAlphaComponent(0).cgColor, color2.cgColor]
+        } else
+        if color2.rgba.alpha == 0 {
+            gradientLayer.colors = [color1.cgColor, color2.withAlphaComponent(0).cgColor]
+        }else {
+            gradientLayer.colors = [color1.cgColor, color2.cgColor]
+        }
+        
+      
     
         layer.insertSublayer(gradientLayer, at: 0)
     }
@@ -63,4 +73,16 @@ public class GradientView: UIView {
 extension FloatingPoint {
     var toRadians: Self { return self * .pi / 180 }
     var toDegrees: Self { return self * 180 / .pi }
+}
+
+extension UIColor {
+    var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+
+        return (red, green, blue, alpha)
+    }
 }

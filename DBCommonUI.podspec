@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DBCommonUI'
-  s.version          = '0.1.9.5'
+  s.version          = '0.1.9.6'
   s.summary          = 'A short description of CommonUI.'
   s.swift_version    = '5.0'
 
